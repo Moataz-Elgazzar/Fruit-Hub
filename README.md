@@ -50,7 +50,7 @@ main.dart
 ## How to Run
 1. Clone the repository:
    ```
-   git clone <repository_url>
+   git clone <https://github.com/Moataz-Elgazzar/Fruit-Hub.git>
    ```
 2. Navigate to project directory:
    ```
