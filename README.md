@@ -78,10 +78,9 @@ main.dart
 
 📸 Screenshots
  
- ![splash](splash_screen.png)
- ![welcome](welcome_screen.png)
- ![home](home_screen.png)
- ![details](details_screen.png)
+ ![splash](splash_screen.png) ![welcome](welcome_screen.png) ![home](home_screen.png)  ![details](details_screen.png)
+ 
+
 
 ---
 **Author:** Moataz Mahmoud
