@@ -1,0 +1,43 @@
+name: fruit_hub
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  gap: ^3.0.1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  image_picker: ^1.2.0
+  intl: ^0.20.2
+  lottie: ^3.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/Icons/
+
+  fonts:
+    - family: Brandon Grotesque
+      fonts:
+        - asset: assets/font/HvDTrial_Brandon_Grotesque_regular-BF64a625c9311e1.otf
+          weight: 400
+        - asset: assets/font/HvDTrial_Brandon_Grotesque_bold-BF64a625c9151d5.otf
+          weight: 700
+        - asset: assets/font/HvDTrial_Brandon_Grotesque_medium-BF64a625c84a521.otf
+          weight: 600
+
+
+
+    
+       
