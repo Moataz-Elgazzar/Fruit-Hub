@@ -10,4 +10,6 @@ class AppImages {
   static const String order = 'assets/images/order.png';
   static const String quinoa = 'assets/images/quinoa-fruit-salad.png';
   static const String tropical = 'assets/images/Tropical-Fruit.png';
+  static const String location = 'assets/images/Rectangle 45.png';
+  static const String donee = 'assets/images/doneee.png';
 }

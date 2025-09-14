@@ -78,7 +78,7 @@ main.dart
 
 📸 Screenshots
  
- ![splash & welcome & home](splash_welcome_home_screen.png) , ![details & basket & checkOut](details_basket_checkout_screen.png)  ,![pay & order](pay_order_screen.png) , ![details](details_screen.png)
+ ![splash & welcome & home](splash_welcome_home_screen.png) , ![details & basket & checkOut](details_basket_checkout_screen.png)  ,![pay & order & trake](pay_order_track_screen.png)
  
 
 

@@ -5,6 +5,7 @@ import 'package:fruit_hub/core/text/app_text.dart';
 import 'package:fruit_hub/core/utils/color/colors.dart';
 import 'package:fruit_hub/core/widgets/main_button.dart';
 import 'package:fruit_hub/features/home/pages/home_screen.dart';
+import 'package:fruit_hub/features/trake/pages/trake_screen.dart';
 import 'package:gap/gap.dart';
 
 class CompleteOrder extends StatelessWidget {
@@ -22,7 +23,14 @@ class CompleteOrder extends StatelessWidget {
           Gap(16),
           Text('Your order have been taken and\nis being attended to', style: TextStyles.subtitleStyle(fontSize: 20), textAlign: TextAlign.center),
           Gap(56),
-          MainButton(height: 70, width: 250, title: 'Track order', onPressed: () {}),
+          MainButton(
+            height: 70,
+            width: 250,
+            title: 'Track order',
+            onPressed: () {
+              pushTo(context, TrakeScreen());
+            },
+          ),
           Gap(48),
           MainButton(
             height: 70,
