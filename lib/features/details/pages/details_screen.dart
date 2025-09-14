@@ -3,6 +3,7 @@ import 'package:fruit_hub/core/functions/navigator.dart';
 import 'package:fruit_hub/core/text/app_text.dart';
 import 'package:fruit_hub/core/utils/color/colors.dart';
 import 'package:fruit_hub/core/widgets/main_button.dart';
+import 'package:fruit_hub/features/basket/pages/basket_screen.dart';
 import 'package:fruit_hub/features/home/models/recommended_product.dart';
 import 'package:gap/gap.dart';
 
@@ -127,7 +128,15 @@ class _DetailsScreenState extends State<DetailsScreen> {
                           onPressed: () {},
                           icon: Icon(Icons.favorite_border, color: AppColors.primaryColor, size: 35),
                         ),
-                        MainButton(title: 'Add to basket', width: 219, onPressed: () {}),
+                        MainButton(
+                          title: 'Add to basket',
+                          width: 219,
+                          onPressed: () {
+                            setState(() {
+                              pushTo(context, BasketScreen());
+                            });
+                          },
+                        ),
                       ],
                     ),
                   ],

@@ -1,16 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:fruit_hub/core/functions/navigator.dart';
 import 'package:fruit_hub/core/text/app_text.dart';
 import 'package:fruit_hub/core/utils/color/colors.dart';
 import 'package:fruit_hub/core/widgets/custome_text_field.dart';
+import 'package:fruit_hub/features/basket/pages/basket_screen.dart';
 import 'package:fruit_hub/features/home/models/product_data.dart';
 import 'package:fruit_hub/features/home/models/recommended_product.dart';
 import 'package:fruit_hub/features/home/widgets/product_list.dart';
 import 'package:fruit_hub/features/home/widgets/recommended_card.dart';
 import 'package:gap/gap.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -28,7 +35,14 @@ class HomeScreen extends StatelessWidget {
                     Icon(Icons.menu, color: AppColors.darkColor, size: 35),
                     Column(
                       children: [
-                        Icon(Icons.shopping_basket, color: AppColors.primaryColor, size: 35),
+                        IconButton(
+                          onPressed: () {
+                            setState(() {
+                              pushTo(context, BasketScreen());
+                            });
+                          },
+                          icon: Icon(Icons.shopping_basket, color: AppColors.primaryColor, size: 35),
+                        ),
                         Text('My basket', style: TextStyles.smallStyle(color: AppColors.darkColor)),
                       ],
                     ),
